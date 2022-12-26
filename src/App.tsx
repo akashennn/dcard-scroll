@@ -44,7 +44,7 @@ const App = (): JSX.Element => {
   };
 
   return (
-    <Layout style={{ height: "100vh" }}>
+    <Layout>
       <Header>DCard Repository Search</Header>
 
       <Content className="body">
