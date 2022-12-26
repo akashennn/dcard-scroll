@@ -1,0 +1,45 @@
+Header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  margin-bottom: 24px;
+  color: white !important;
+}
+
+.body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 0 24px;
+  overflow-y: auto;
+}
+
+.content {
+  padding: 24px;
+  height: 100%;
+  background: rgb(255, 255, 255);
+}
+
+.search-input {
+  margin-bottom: 24px;
+}
+
+.card-group {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 12px;
+}
+
+/* limit repository description to only 4 lines */
+.ant-card-meta-description {
+  display: -webkit-box;
+  max-width: 200px;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+Footer {
+  text-align: center;
+}
